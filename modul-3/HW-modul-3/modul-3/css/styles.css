@@ -1,88 +1,89 @@
-html{
+/** @format */
+
+html {
   box-sizing: border-box;
 }
-*,*::after,
-*::before{
+*,
+*::after,
+*::before {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
-.conteiner{
+.conteiner {
   width: 900px;
-  margin:0 auto;
+  margin: 0 auto;
   font-size: 0;
   background: #ffffff;
   vertical-align: top;
 }
 
 /*Site novigation*/
-
-ul.site-novigation{
-  text-align: center;
-  list-style: none; 
-  text-decoration:none;
-}
-
-.site-novigation-list li{
-  display:inline-block;
-  list-style: none; 
+.site-novigation {
   margin-bottom: 102px;
   margin-top: 42px;
 }
-.novigation-list-item{
+ul.site-novigation {
+  text-align: center;
+  list-style: none;
+}
+
+.site-novigation-list li {
+  display: inline-block;
+  list-style: none;
+}
+.novigation-list-item {
   font-size: 14px;
   font-family: "PlayfairDisplay";
-  color: rgb(98, 98, 98);
   text-transform: uppercase;
   line-height: 24px;
-  }
-  .list-item-link a{
-    color: rgb(98, 98, 98);
-    text-decoration:none;
-  }
-  
-
-.list-item-Lifestyle{
-  margin-left: 160px;
-  margin-right: 120px;  
 }
-.list-item-Photodiary{
+.list-item-link {
+  color: rgb(98, 98, 98);
+  text-decoration: none;
+}
+
+.novigation-list-item:nth-child(1) {
+  margin-left: 160px;
+  margin-right: 120px;
+}
+.novigation-list-item:nth-child(2) {
   margin-right: 100px;
 }
 
-.list-item-Music{
- margin-right: 90px;
+.novigation-list-item:nth-child(3) {
+  margin-right: 90px;
 }
 
 .site-novigation a:hover,
-.site-novigation a:focus{
- color: rgb(3, 156, 244);
- cursor: auto;
+.site-novigation a:focus {
+  color: rgb(3, 156, 244);
+  cursor: auto;
 }
 
-/*site content*/ 
+/*site content*/
 
-ul.mane-content-stories{
+ul.mane-content-stories {
   text-align: center;
 }
-.mane-content-stories li{
-  display:inline-block;
+.mane-content-stories li {
+  display: inline-block;
   list-style: none;
   width: 420px;
   height: 610px;
 }
 
-.mane-content-stories li:nth-child(odd){
+.mane-content-stories li:nth-child(odd) {
   margin-right: 60px;
 }
 
-img{
+img {
   display: block;
   max-width: 100%;
-  height:auto;
+  height: auto;
 }
 
-.about-story{
+.about-story {
   font-size: 14px;
   font-family: "PlayfairDisplay";
   color: rgb(98, 98, 98);
@@ -91,7 +92,7 @@ img{
   text-align: justify;
 }
 
-.title-of-story{
+.title-of-story {
   font-size: 30px;
   font-family: "PlayfairDisplay";
   color: rgb(98, 98, 98);
@@ -107,12 +108,12 @@ img{
   line-height: 1.2;
   margin-top: 35px;
 }
-
-.footer-button{
-margin-bottom:70px;
-font-size: 20px;
-line-height: 24px;
-text-align: center;
-font-family: "PlayfairDisplay";
-color: rgb(98,98, 98);
+/*button*/ 
+.footer-button {
+  margin-bottom: 70px;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  font-family: "PlayfairDisplay";
+  color: rgb(98, 98, 98);
 }
