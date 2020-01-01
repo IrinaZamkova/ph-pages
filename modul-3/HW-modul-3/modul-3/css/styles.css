@@ -8,12 +8,23 @@ html{
   padding: 0;
 }
 .conteiner{
-  width: 1200px;
+  width: 900px;
+  margin:0 auto;
+  font-size: 0;
   background: #ffffff;
+  vertical-align: top;
 }
+
+/*Site novigation*/
+
+ul.site-novigation{
+  text-align: center;
+  list-style: none; 
+  text-decoration:none;
+}
+
 .site-novigation-list li{
   display:inline-block;
-  text-align: center;
   list-style: none; 
   margin-bottom: 102px;
   margin-top: 42px;
@@ -24,14 +35,15 @@ html{
   color: rgb(98, 98, 98);
   text-transform: uppercase;
   line-height: 24px;
-  list-style-type: none;
   }
-.novigation-list-item a{
-  text-decoration: none;
-}
+  .list-item-link a{
+    color: rgb(98, 98, 98);
+    text-decoration:none;
+  }
+  
 
 .list-item-Lifestyle{
-  margin-left: 310px;
+  margin-left: 160px;
   margin-right: 120px;  
 }
 .list-item-Photodiary{
@@ -48,10 +60,11 @@ html{
  cursor: auto;
 }
 
-.mane-content{
-  margin-left: 150px;
-}
+/*site content*/ 
 
+ul.mane-content-stories{
+  text-align: center;
+}
 .mane-content-stories li{
   display:inline-block;
   list-style: none;
@@ -75,6 +88,7 @@ img{
   color: rgb(98, 98, 98);
   line-height: 24px;
   margin-top: 35px;
+  text-align: justify;
 }
 
 .title-of-story{
@@ -93,6 +107,7 @@ img{
   line-height: 1.2;
   margin-top: 35px;
 }
+
 .footer-button{
 margin-bottom:70px;
 font-size: 20px;
