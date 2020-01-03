@@ -25,14 +25,15 @@ html {
 }
 ul.site-novigation {
   list-style: none;
-  text-align: center;
 }
 .site-novigation-list li {
   display: inline-block;
   list-style: none;
 }
-
-.navigation-list-item {
+.site-novigation-list{
+ text-align: center;
+}
+.novigation-list-item {
   font-size: 14px;
   font-family: "PlayfairDisplay";
   text-transform: uppercase;
