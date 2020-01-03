@@ -112,11 +112,26 @@ img {
   line-height: 1.2;
   margin-top: 35px;
 }
+
+
 /*button*/ 
 .footer-button {
   margin-bottom: 70px;
+  text-align: center;
+}
+
+.button-content{
   font-size: 20px;
+  line-height: 24px;
   text-align: center;
   font-family: "PlayfairDisplay";
   color: rgb(98, 98, 98);
+  background: transparent;
+  border-width: 1px;
+  border-color: #626262;
+  border-style: solid;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
