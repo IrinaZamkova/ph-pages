@@ -24,12 +24,9 @@ html {
   margin-top: 42px;
 }
 ul.site-novigation {
-  text-align: center;
   list-style: none;
-}
-.site-novigation-list {
   text-align: center;
-  }
+}
 .site-novigation-list li {
   display: inline-block;
   list-style: none;
@@ -115,10 +112,21 @@ img {
 /*button*/ 
 .footer-button {
   margin-bottom: 70px;
+  text-align: center;
+ 
+}
+.button-content{
   font-size: 20px;
   line-height: 24px;
-  padding: 20px,32px;
   text-align: center;
   font-family: "PlayfairDisplay";
   color: rgb(98, 98, 98);
+  background: transparent;
+  border-width: 1px;
+  border-color: #626262;
+  border-style: solid;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
