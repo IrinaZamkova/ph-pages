@@ -55,9 +55,6 @@ ul.site-novigation {
 .novigation-list-item:nth-child(3) {
   margin-right: 90px;
 }
-.novigation-list-item:last-child{
-  margin-right: 160px;
-}
 
 .site-novigation a:hover,
 .site-novigation a:focus {
