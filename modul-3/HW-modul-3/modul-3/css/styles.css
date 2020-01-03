@@ -29,10 +29,11 @@ ul.site-novigation {
 .site-novigation-list li {
   display: inline-block;
   list-style: none;
-   text-align: center;
 }
-
-.novigation-list-item {
+.site-novigation-list{
+  text-align: center;
+}
+.navigation-list-item {
   font-size: 14px;
   font-family: "PlayfairDisplay";
   text-transform: uppercase;
@@ -53,6 +54,9 @@ ul.site-novigation {
 
 .novigation-list-item:nth-child(3) {
   margin-right: 90px;
+}
+.novigation-list-item:last-child{
+  margin-right: 160px;
 }
 
 .site-novigation a:hover,
