@@ -61,7 +61,10 @@ ul.site-novigation {
 }
 
 /*site content*/
-
+.content-conteiner{
+  width: 900px;
+  height: 1700px;
+}
 ul.mane-content-stories {
   text-align: center;
 }
@@ -109,13 +112,14 @@ img {
   line-height: 1.2;
   margin-top: 35px;
 }
+
+
 /*button*/ 
 .footer-button {
-  margin-bottom: 70px;
   text-align: center;
- 
+  margin-bottom: 70px;
 }
-.button-content{
+ .button-content{
   font-size: 20px;
   line-height: 24px;
   text-align: center;
