@@ -29,10 +29,9 @@ ul.site-novigation {
 .site-novigation-list li {
   display: inline-block;
   list-style: none;
+   text-align: center;
 }
-.site-novigation-list{
-  text-align: center;
-}
+
 .novigation-list-item {
   font-size: 14px;
   font-family: "PlayfairDisplay";
