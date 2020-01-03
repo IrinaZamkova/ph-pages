@@ -29,7 +29,7 @@ ul.site-novigation {
 .site-novigation-list li {
   display: inline-block;
   list-style: none;
-   text-align: center;
+  text-align: center;
 }
 
 .novigation-list-item {
@@ -62,10 +62,7 @@ ul.site-novigation {
 }
 
 /*site content*/
-.content-conteiner{
-  width: 900px;
-  height: 1700px;
-}
+
 ul.mane-content-stories {
   text-align: center;
 }
