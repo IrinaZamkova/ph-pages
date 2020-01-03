@@ -25,7 +25,6 @@ html {
 }
 ul.site-novigation {
   list-style: none;
-  text-align: center;
 }
 .site-novigation-list li {
   display: inline-block;
