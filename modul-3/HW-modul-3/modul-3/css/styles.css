@@ -31,6 +31,9 @@ ul.site-novigation {
   display: inline-block;
   list-style: none;
 }
+.site-novigation-list{
+  text-align: center;
+}
 .novigation-list-item {
   font-size: 14px;
   font-family: "PlayfairDisplay";
