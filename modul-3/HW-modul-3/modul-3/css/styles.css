@@ -69,11 +69,11 @@ ul.site-novigation {
 
 /*site content*/
 
-ul.mane-content-stories {
+ul.main-content-stories {
   text-align: center;
 }
 
-.mane-content-stories li {
+.main-content-stories li {
   display: inline-block;
   list-style: none;
   width: 420px;
@@ -84,7 +84,7 @@ ul.mane-content-stories {
   vertical-align: top;
 }
 
-.mane-content-stories li:nth-child(odd) {
+.main-content-stories li:nth-child(odd) {
   margin-right: 60px;
 }
 
