@@ -86,7 +86,6 @@ h2::after {
   height: 7px;
   background-color: #1abc9c;
   margin-top: 30px;
-  text-align: center;
   margin-left: 475px;
   margin-bottom: 82px;
 }
@@ -151,7 +150,6 @@ h2::after {
   font-family: Open + Sans;
   font-weight: 700;
   color: #525252;
-  margin-top: 16px;
 }
 
 .news-blogs-content {
@@ -184,4 +182,12 @@ h2::after {
   background-color: rgb(181, 194, 202);
   cursor: pointer;
 }
-
+.blog-title::after{
+  display: inline-block;
+  content: "";
+  width: 136px;
+  height: 3px;
+  background-color: #1abc9c;
+  margin-top: 14px;
+  margin-bottom: 30px;
+}
