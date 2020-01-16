@@ -14,7 +14,7 @@ body {
   width: 1110px;
   margin: 0 auto;
   background: #ffffff;
-  font-family: "Roboto", "Open Sans", "MYRIADPRO-REGULAR";
+  font-family: "Roboto", "Open Sans", "MYRIAD PRO-REGULAR";
 }
 img {
   display: block;
@@ -27,11 +27,11 @@ img {
   clear: both;
 }
 .page-header {
-  margin-top: 40px;
+  padding-top: 40px;
   margin-bottom: 98px;
 }
 
-.site-novigation-list {
+.site-navigation-list {
   float: right;
   width: 470px;
   list-style: none;
@@ -43,20 +43,20 @@ img {
   display: inline-block;
 }
 
-.site-novigation-list li {
+.site-navigation-list li {
   float: left;
   list-style: none;
 }
-.site-novigation a:hover,
-.site-novigation a:focus {
+.site-navigation a:hover,
+.site-navigation a:focus {
   color: #1abc9c;
   cursor: pointer;
 }
-.novigation-list-item:not(:last-child) {
+.navigation-list-item:not(:last-child) {
   padding-right: 23px;
 }
 .list-item-link {
-  font-family: "MYRIADPRO-REGULAR";
+  font-family: "MYRIAD PRO-REGULAR";
   color: black;
   text-decoration: none;
   text-transform: uppercase;
@@ -107,12 +107,19 @@ h2::after {
 .product-info:not(:nth-child(4n)) {
   margin-right: 30px;
 }
+.product-info-img{
+    overflow: hidden;
+    height: 285px;
+    line-height: 285px;
+    text-align: center;
+}
+
 .product-name {
   float: left;
   padding-left: 16px;
   width: 198px;
   height: 40px;
-  padding-top: 4px;
+  line-height : 40px;  
   background-color: #323232;
 }
 .product-price {
