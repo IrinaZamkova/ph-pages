@@ -178,25 +178,24 @@ img {
   border-width: 10px;
   border-color: rgb(255, 255, 255);
   border-style: solid;
-  background-color: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0);
   position: absolute;
   padding-top: 70px;
   padding-left: 26px;
   margin: 0 auto;
-  opacity: 0;
   z-index: 2;
 }
 .modal-menu {
   position: absolute;
   z-index: 4;
-  opacity: 1;
+opacity: 0;
 }
 
 .cart:hover .overlay {
-  opacity: 0.561;
+  background: rgba(0, 0, 0,0.561);
 }
-.cart:hover .modal-menu-button {
-  opacity:1;
+.cart:hover .modal-menu {
+  opacity: 1;
 }
 .cart:hover .product-name {
   background: #1abc9c;
