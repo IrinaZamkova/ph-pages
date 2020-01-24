@@ -12,8 +12,12 @@ html {
   padding: 0;
 }
 
-body {
-  width: 100vw;
+
+body
+{
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
   background: #ffffff;
   font-family: "Roboto", "Open Sans", "MYRIAD PRO-REGULAR";
 }
@@ -33,7 +37,8 @@ img {
 }
 .page-header {
   width: 1110px;
-  margin: 0 auto;
+  margin-top: 0 ;
+  margin-bottom:10px;
   margin-top: 36px;
   margin-bottom: 44px;
 }
@@ -301,6 +306,7 @@ h2::after {
   font: 16px;
   color: #ffffff;
   line-height: 28px;
+  margin:0 auto; 
 }
 .color-text {
   color: #1abc9c;
