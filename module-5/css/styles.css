@@ -35,8 +35,6 @@ img {
 }
 .page-header {
   width: 1110px;
-  margin-top: 0 ;
-  margin-bottom:10px;
   margin-top: 36px;
   margin-bottom: 44px;
 }
@@ -63,7 +61,7 @@ img {
   cursor: pointer;
 }
 .navigation-list-item:not(:last-child) {
-  padding-right: 23px;
+  margin-right: 23px;
 }
 .list-item-link {
   font-family: "MYRIAD PRO-REGULAR";
@@ -71,7 +69,10 @@ img {
   text-decoration: none;
   text-transform: uppercase;
 }
-
+.slider-shadow{
+position: absolute;
+ background:rgba(0, 0, 2, 0.522) ;
+}
 .slider {
   display: block;
   height: 600px;
@@ -82,13 +83,20 @@ img {
   background-size: cover;
   padding-top: 200px;
 }
-
+.slider::after{
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  content: ''; 
+  top: 0; 
+  left: 0; 
+  right: 0;
+   bottom: 0; 
+}
 .slider-content {
   width: 1170px;
   display: block;
   margin: auto;
   height: 150px;
-  position: relative;
 }
 .slider-title {
   font-size: 60px;
@@ -158,10 +166,12 @@ img {
   opacity: 1;
   cursor: pointer;
 }
-
+.carts-list-section{
+  position: relative;
+  margin-bottom: 100px;
+}
 .cart {
   width: 255px;
-  height: 322px;
   list-style: none;
   text-transform: uppercase;
   float: left;
@@ -170,10 +180,9 @@ img {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   color: rgb(255, 255, 255);
-  margin-bottom: 32px;
   cursor: pointer;
   position: relative;
-  margin-bottom: 100px;
+ 
 }
 .overlay {
   width: 236px;
@@ -244,24 +253,26 @@ opacity: 0;
   display: inline-block;
   margin-left: 10px;
 }
+
 h2 {
   text-align: center;
   font-size: 48px;
   font-weight: 900;
   color: #525252;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   text-transform: uppercase;
-  margin-top: 104px;
 }
 h2::after {
   display: block;
-  margin: auto;
   content: "";
+  position: absolute;
   width: 163px;
   height: 7px;
   background-color: #1abc9c;
-  margin-top: 30px;
-  margin-bottom: 82px;
+  top: 80px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ 
 }
 .carts-list li:not(:nth-child(4)) {
   margin-right: 30px;
