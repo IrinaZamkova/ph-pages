@@ -69,10 +69,7 @@ img {
   text-decoration: none;
   text-transform: uppercase;
 }
-.slider-shadow{
-position: absolute;
- background:rgba(0, 0, 2, 0.522) ;
-}
+
 .slider {
   display: block;
   height: 600px;
@@ -83,29 +80,43 @@ position: absolute;
   background-size: cover;
   padding-top: 200px;
 }
-.slider::after{
+.slider::after {
   background: rgba(0, 0, 0, 0.5);
   position: absolute;
-  content: ''; 
-  top: 0; 
-  left: 0; 
+  content: "";
+  top: 0;
+  left: 0;
   right: 0;
-   bottom: 0; 
+  bottom: 0;
+  z-index: 2;
 }
 .slider-content {
-  width: 1170px;
+  width: 1110px;
   display: block;
-  margin: auto;
+  position: absolute;
+  text-align: center;
   height: 150px;
+  left: 50%;
+  margin-left: -550px;
+  z-index: 3;
+}
+.slider-text {
+  display: block;
+  position: absolute;
+  width: 780px;
+  top: 0;
+  left: 50%;
+  margin-left: -390px;
+  text-align: left;
 }
 .slider-title {
+  margin: 0;
   font-size: 60px;
   font-weight: 900;
   color: #ffffff;
   font-family: "Roboto";
   text-transform: uppercase;
   line-height: 1.367;
-  text-align: center;
 }
 .slider-info {
   font-size: 24px;
@@ -114,9 +125,6 @@ position: absolute;
   font-family: "Roboto";
   text-transform: uppercase;
   line-height: 1.367;
-  text-align: left;
-  padding-left: 168px;
-  margin: 0;
 }
 .slider-ctrl {
   font-family: "Pe";
@@ -157,7 +165,7 @@ position: absolute;
   left: 45%;
   transform: translate(-50%, -50%) rotate(135deg);
 }
-.slider-ctrl-left::before{
+.slider-ctrl-left::before {
   left: 55%;
   transform: translate(-50%, -50%) rotate(-45deg);
 }
@@ -166,8 +174,7 @@ position: absolute;
   opacity: 1;
   cursor: pointer;
 }
-.carts-list-section{
-  position: relative;
+.carts-list-section {
   margin-bottom: 100px;
 }
 .cart {
@@ -182,7 +189,6 @@ position: absolute;
   color: rgb(255, 255, 255);
   cursor: pointer;
   position: relative;
- 
 }
 .overlay {
   width: 236px;
@@ -198,11 +204,11 @@ position: absolute;
 .modal-menu {
   position: absolute;
   z-index: 4;
-opacity: 0;
+  opacity: 0;
 }
 
 .cart:hover .overlay {
-  background: rgba(0, 0, 0,0.561);
+  background: rgba(0, 0, 0, 0.561);
 }
 .cart:hover .modal-menu {
   opacity: 1;
@@ -261,6 +267,7 @@ h2 {
   color: #525252;
   margin-bottom: 100px;
   text-transform: uppercase;
+  position: relative;
 }
 h2::after {
   display: block;
@@ -272,7 +279,6 @@ h2::after {
   top: 80px;
   left: 50%;
   transform: translate(-50%, -50%);
- 
 }
 .carts-list li:not(:nth-child(4)) {
   margin-right: 30px;
@@ -303,10 +309,9 @@ h2::after {
 }
 
 .footer {
-  height: 90px;
-  bottom: 0px;
-  margin: 0;
+  margin: 0, auto;
   padding-top: 35px;
+  padding-bottom: 27px;
   background-color: #323232;
 }
 .footer-content {
@@ -315,7 +320,6 @@ h2::after {
   font: 16px;
   color: #ffffff;
   line-height: 28px;
-  margin:0 auto; 
 }
 .color-text {
   color: #1abc9c;
