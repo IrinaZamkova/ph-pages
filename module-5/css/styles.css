@@ -35,10 +35,12 @@ img {
 }
 .page-header {
   width: 1110px;
+  margin: 0 auto;
+}
+.site-navigation {
   margin-top: 36px;
   margin-bottom: 44px;
 }
-
 .site-navigation-list {
   float: right;
   list-style: none;
@@ -73,12 +75,10 @@ img {
 .slider {
   display: block;
   height: 600px;
-  margin-bottom: 100px;
   position: relative;
   background-image: url(../images/slider.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 200px;
 }
 .slider::after {
   background: rgba(0, 0, 0, 0.5);
@@ -97,6 +97,7 @@ img {
   text-align: center;
   height: 150px;
   left: 50%;
+  top: 200px;
   margin-left: -550px;
   z-index: 3;
 }
@@ -174,7 +175,7 @@ img {
   opacity: 1;
   cursor: pointer;
 }
-.carts-list-section {
+.carts-list {
   margin-bottom: 100px;
 }
 .cart {
@@ -196,8 +197,9 @@ img {
   border-width: 0px;
   background: rgba(0, 0, 0, 0);
   position: absolute;
-  padding-top: 70px;
-  padding-left: 26px;
+  padding: 0;
+  top: 10px;
+  left: 10px;
   margin: 0 auto;
   z-index: 2;
 }
@@ -205,6 +207,8 @@ img {
   position: absolute;
   z-index: 4;
   opacity: 0;
+  top: 80px;
+  left: 34px;
 }
 
 .cart:hover .overlay {
@@ -234,7 +238,7 @@ img {
 }
 .modal-menu-button-basket {
   display: block;
-  width: 166px;
+  width: 168px;
   height: 50px;
   box-sizing: border-box;
   background-color: #323232;
@@ -268,6 +272,7 @@ h2 {
   margin-bottom: 100px;
   text-transform: uppercase;
   position: relative;
+  margin-top: 100px;
 }
 h2::after {
   display: block;
@@ -285,14 +290,17 @@ h2::after {
 }
 
 .product-info-img {
+  display: inline-block;
+  top: 0;
   overflow: hidden;
   height: 285px;
   line-height: 285px;
   text-align: center;
 }
-
 .product-name {
-  float: left;
+  display: inline-block;
+  bottom: 0;
+  left: 0;
   padding-left: 16px;
   width: 198px;
   height: 40px;
@@ -300,7 +308,10 @@ h2::after {
   background-color: #323232;
 }
 .product-price {
-  float: right;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
   width: 57px;
   height: 40px;
   padding-left: 10px;
@@ -309,9 +320,7 @@ h2::after {
 }
 
 .footer {
-  margin: 0, auto;
-  padding-top: 35px;
-  padding-bottom: 27px;
+  margin: 0 auto;
   background-color: #323232;
 }
 .footer-content {
@@ -320,6 +329,8 @@ h2::after {
   font: 16px;
   color: #ffffff;
   line-height: 28px;
+  padding-top: 35px;
+  padding-bottom: 27px;
 }
 .color-text {
   color: #1abc9c;
