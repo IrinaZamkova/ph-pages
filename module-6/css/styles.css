@@ -295,7 +295,7 @@ input[type="email"] {
   font-style: italic;
   font-weight: lighter;
 }
-input[type="submit"] {
+.submit{
   border: none;
   width: 150px;
   height: 40px;
