@@ -22,11 +22,12 @@
   </head>
 
   <body>
-    <header class="container page-header">
-      <nav class="wrapper site-navigation">
-        <div class="site-logo-img">
-          <img src="image/logo.png" alt="MART" />
-        </div>
+    <header class="container  page-header">
+      <div class="wrapper">
+       <nav class="site-navigation">
+         <div class="site-logo-img">
+           <img src="image/logo.png" alt="MART" />
+         </div>
         <ul class="site-navigation-list">
           <li class="navigation-list-item">
             <a class="list-item-link" href="#">About</a>
@@ -45,15 +46,17 @@
           </li>
         </ul>
       </nav>
+    </div>
     </header>
 
     <main class="main">
       <section class="container ">
+        <div class="wrapper">
         <h2 class="section-title ">
           <span class="section-tittle-select">Wee work with</span>Amazing
           services
         </h2>
-        <ul class="wrapper  service-items-list">
+        <ul class="service-items-list">
           <li class="service-item service-icon-alarm">
             <div class="service-item-content">
               <h4 class="service-tittle">Photography</h4>
@@ -103,17 +106,19 @@
             </div>
           </li>
         </ul>
+      </div>
       </section>
 
       <section class="container team-content">
+        <div class="wrapper">
         <h2 class="section-title">
           <span class="section-tittle-select">Who we are</span>Meet our team
         </h2>
-        <span class="about-team">
+        <p class="about-team">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
           molestiae doloribus quidem possimus voluptate repellendus ut
           dignissimos nobis, iusto, nulla sunt? Molestiae nostrum quia nihil
-          incidunt excepturi officia earum soluta.</span>
+          incidunt excepturi officia earum soluta.</p>
 
         <ul class="wrapper team-list-content">
           <li class="team-list">
@@ -187,18 +192,21 @@
             </div>
           </li>
         </ul>
+      </div>
       </section>
     </main>
 
-    <footer class=" container footer">
-      <p class="footer-content">
-        © 2016 MoGo free PSD template by
+    <footer class="container  footer">
+      <div class=" wrapper footer-content ">
+       <p class="footer-text">
+        <span>&copy;</span> 2016 MoGo free PSD template by
         <span class="color-text">Laaqiq</span>
-      </p>
-      <form class="input" action="#">
+        </p>
+       <form class="input" action="#">
           <input type="email" placeholder="Your Email..." name="email" />
           <button class="submit">Subscribe</button>
-      </form>
+       </form>
+    </div>
     </footer>
   </body>
 </html>
