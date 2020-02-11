@@ -1,0 +1,14 @@
+ 
+@font-face{
+  font-family:'Montserrat', sans-serif;
+  src: url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap');
+}
+@font-face{
+    font-family: 'Merriweather Sans', sans-serif;
+    src: url('https://fonts.googleapis.com/css?family=Merriweather+Sans:300i&display=swap');
+}
+
+@font-face{
+    font-family: 'Roboto Slab', serif;
+    src: url('https://fonts.googleapis.com/css?family=Merriweather+Sans:300i|Roboto+Slab&display=swap');
+}
