@@ -15,6 +15,7 @@ html {
 body {
   background: rgb(255, 255, 255);
 }
+
 .wrapper {
   width: 940px;
   margin: 0 auto;
@@ -42,7 +43,7 @@ img {
   font-size: 14px;
   font-weight: 500px;
   color: rgb(34, 34, 34);
-  line-height: 41px;
+  line-height: 1.5;
   text-transform: uppercase;
 }
 .menu-item:not(:last-child) {
@@ -86,14 +87,13 @@ img {
   margin-bottom: 100px;
   cursor: pointer;
 }
-
 .service-item {
   width: 290px;
 }
 .service-content {
   text-align: center;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 1.2;
   color: rgb(119, 119, 119);
   font-family: "Roboto Slab", serif;
 }
@@ -101,8 +101,8 @@ img {
 .service-tittle {
   font-size: 18px;
   font-family: "Montserrat", sans-serif;
-  line-height: 75px;
-  margin-bottom: 12px;
+  margin-top: 30px;
+  margin-bottom:45px;
   color: rgb(34, 34, 34);
   text-align: center;
   font-weight: 900;
@@ -134,7 +134,7 @@ img {
 .area-for-message {
   resize: none;
   width: 455px;
-  height: 216px;
+  height: 230px;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   line-height: 1.2;
@@ -147,6 +147,7 @@ img {
 .input-form__input-area {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 30px;
 }
 .form_content-input {
   display: flex;
@@ -154,7 +155,6 @@ img {
 }
 input {
   width: 455px;
-  height: 52px;
   margin-bottom: 30px;
   border: none;
   font-family: "Montserrat", sans-serif;
@@ -164,6 +164,9 @@ input {
   text-transform: uppercase;
   font-weight: 900;
   padding: 20px;
+}
+input:nth-last-child(1){
+  margin-bottom: 0;
 }
 
 input:valid,
@@ -175,8 +178,8 @@ textarea:invalid {
   outline-color: red;
 }
 .input-form {
-  padding-top: 100px;
-  padding-bottom: 110px;
+  margin-top: 100px;
+  margin-bottom: 110px;
 }
 
 .input-form_title {
@@ -200,6 +203,7 @@ textarea:invalid {
   text-align: center;
 }
 .footer-container {
+  display: flex;
   background-image: url(../image/Map\ Image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
