@@ -138,7 +138,7 @@ img {
 .area-for-message {
   resize: none;
   width: 455px;
-  height: 238px;
+  height: 230px;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   line-height: 1.2;
@@ -146,8 +146,9 @@ img {
   text-transform: uppercase;
   font-weight: 900;
   padding: 20px;
+  border: none;
 }
-.
+
 .input-form__input-area {
   display: flex;
   justify-content: space-between;
