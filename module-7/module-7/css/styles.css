@@ -11,7 +11,11 @@ html {
   margin: 0;
   padding: 0;
 }
-
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 body {
   background: rgb(255, 255, 255);
 }
@@ -134,7 +138,7 @@ img {
 .area-for-message {
   resize: none;
   width: 455px;
-  height: 230px;
+  height: 238px;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   line-height: 1.2;
@@ -143,7 +147,7 @@ img {
   font-weight: 900;
   padding: 20px;
 }
-
+.
 .input-form__input-area {
   display: flex;
   justify-content: space-between;
@@ -152,10 +156,10 @@ img {
 .form_content-input {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 input {
   width: 455px;
-  margin-bottom: 30px;
   border: none;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
@@ -165,9 +169,7 @@ input {
   font-weight: 900;
   padding: 20px;
 }
-input:nth-last-child(1){
-  margin-bottom: 0;
-}
+
 
 input:valid,
 textarea:valid {
