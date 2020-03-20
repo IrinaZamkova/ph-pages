@@ -51,11 +51,12 @@ body {
   font-weight: bold;
   border: none;
   background: none;
+  border: 2px solid transparent;
+  border-radius: 25px;
 }
 .btn-block__btn:hover,
 .btn-block__btn:focus {
   border: 2px solid white;
-  border-radius: 25px;
 }
 
 .site-logo {
