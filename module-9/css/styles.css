@@ -26,7 +26,6 @@ html {
 
 .header-content__title {
   font-size: 30px;
-  text-transform: uppercase;
 }
 .header-content__text {
   font-size: 18px;
@@ -42,7 +41,6 @@ html {
 }
 .section_title {
   font-size: 22px;
- 
   font-family: "Montserrat", sans-serif;
 }
 
@@ -136,10 +134,4 @@ html {
   .footer__btn {
     padding: 10px 26px;
 }
-}
-
-@media (min-width: 940px) {
-  .container-fluid {
-  min-height: 700px;
-  }
 }
