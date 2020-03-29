@@ -1,0 +1,47 @@
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+.grid{
+ display: grid;
+ width: 800px;
+ height: 400px;
+  grid-template-areas:
+  " ph-1 ph-1 ph-2 ph-2"
+   "ph-1 ph-1 ph-3 ph-4"
+   "ph-6 ph-5 ph-5 ph-4";
+  grid-template-rows:1fr 1fr 2fr;
+  grid-template-columns:repeat(4,1fr) ;
+  margin: 30px auto;
+}
+
+.ph-1{
+grid-area: ph-1;
+}
+.ph-2{
+grid-area: ph-2;
+}
+.ph-3{
+grid-area: ph-3;
+}
+.ph-4{
+grid-area: ph-4;
+}
+.ph-5{
+grid-area: ph-5;
+}
+.ph-6{
+grid-area: ph-6;
+ }
+.img{
+display: block;
+
+}
