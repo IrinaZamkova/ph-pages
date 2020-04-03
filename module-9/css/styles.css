@@ -3,7 +3,6 @@
 html {
   box-sizing: border-box;
 }
-
 .header {
   max-width:1440px;
   margin: 0 auto;
@@ -11,7 +10,6 @@ html {
   background: url(../image/Vector\ Smart\ Object.jpg) no-repeat center top;
   background-size: cover;
 }
-
 .btn-block__btn {
   padding: 10px 20px;
   font-size: 14px;
@@ -24,8 +22,6 @@ html {
   border: 2px solid white;
   transition: 1s;
 }
-
-
 .header-content__title {
   font-size: 30px;
 }
