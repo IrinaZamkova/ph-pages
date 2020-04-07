@@ -4,7 +4,7 @@ html {
   box-sizing: border-box;
 }
 .header {
-  max-width:1440px;
+  min-width:100%;
   margin: 0 auto;
   height: 100%;
   background: url(../image/Vector\ Smart\ Object.jpg) no-repeat center top;
