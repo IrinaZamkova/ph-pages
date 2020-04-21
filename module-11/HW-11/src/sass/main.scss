@@ -1,24 +1,25 @@
 
-@import 'helpers/variables.scss';
-@import 'helpers/mixin.scss';
-@import 'helpers/placeholder.scss';
+@import 'helpers/_variables.scss';
+@import 'helpers/_mixin.scss';
+@import 'helpers/_placeholder.scss';
+
 @import 'normalize.scss';
 @import 'base.scss';
 
 
-@import "components/header.scss";
-@import "components/section-service.scss";
-@import "components/section-team.scss";
-@import "components/footer.scss";
+@import "components/_header.scss";
+@import "components/_section-service.scss";
+@import "components/_section-team.scss";
+@import "components/_footer.scss";
 
 
-@import "components/container.scss";
-@import "components/header-bg-img.scss";
-@import "components/logo.scss";
-@import "components/navigation.scss";
-@import "components/button.scss";
-@import "components/titles.scss";
-@import "components/modal-menu.scss";
-@import "components/icons.scss";
+@import "components/_container.scss";
+@import "components/_header-bg-img.scss";
+@import "components/_logo.scss";
+@import "components/_navigation.scss";
+@import "components/_button.scss";
+@import "components/_titles.scss";
+@import "components/_modal-menu.scss";
+@import "components/_icons.scss";
 
 
