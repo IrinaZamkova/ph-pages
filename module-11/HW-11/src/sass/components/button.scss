@@ -1,0 +1,40 @@
+.header__btn {
+    font-size: $main-font-size*1.125;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    color:$main-color;
+    border: 2px solid $main-color;
+    background-color: transparent;
+      &:hover,
+      &:focus {
+       color: #fce38a;
+       border: 2px solid #fce38a;
+       transition: border 0.2s ease, color 0.2s linear;
+      }
+}   
+
+
+.footer__input {
+  display: flex;
+  font-size: $main-font-size;
+  line-height: 1.2;
+}
+.footer__input--email {
+  border: 0.5px solid rgb(181, 181, 181);
+  color:$title-color;
+  width: 230px;
+  background-color: $main-color;
+  padding: 15px;
+  color: #cccccc;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: lighter;
+}
+.footer__input--submit {
+  border: none;
+  padding: 15px 35px;
+  outline: 0;
+  background: #95e1d3;
+  text-transform: uppercase;
+  color: $main-color;
+}

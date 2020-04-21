@@ -1,0 +1,37 @@
+.section {
+    padding-top: 45px;
+    padding-bottom: 80px;
+  }
+  .service-list{
+     @extend section__list;
+  }
+.service-list__card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 380px;
+    list-style: none;
+  }
+  .service-list__title {
+    font-size: 14px;
+    margin-bottom: 12px;
+    text-align: left;
+  }
+  .service-list__card:not(:nth-last-child(-n + 3)) {
+    margin-bottom: 100px;
+  }
+ 
+  .service-list__card::before {
+    display: block;
+    content: "";
+    width: 80px;
+    min-height: 40px;
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: contain;
+  }
+  .service-list__content {
+    width: 300px;
+  }
+
+  
