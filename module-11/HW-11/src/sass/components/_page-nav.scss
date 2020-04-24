@@ -1,8 +1,6 @@
 
 .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
+  @include center-flex ($type: "ver-start");
     margin-bottom: 160px;
      &__list {
       display: block;
@@ -19,7 +17,7 @@
   }
   .nav__link {
     font-family: $main-font;
-    color: $main-color;
+    color: $main-light-color;
     text-decoration: none;
     font-size: 14px;
     text-transform: uppercase;
@@ -28,15 +26,15 @@
     transition: border 0.2s ease, color 0.2s linear;
      &--border:hover,
      &--border:focus {
-       color: #fce38a;
-       border-bottom: 2px solid #fce38a;
+       color: $accent-color;
+       border-bottom: 2px solid $accent-color;
      }
   }
   .nav__svg {
-    fill: $main-color;
+    fill: $main-light-color;
      &:hover,
      &:focus {
-       fill: #fce38a;
+       fill: $accent-color;
        transition: color 0.2s linear;
      }
   }

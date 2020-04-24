@@ -1,5 +1,5 @@
 .section__list--team{
-    @extend section__list;
+  @include list;
 }
 .team-list__card {
     display: block;
@@ -16,13 +16,13 @@
     color: $title-color;
     margin-top: 25px;
     margin-bottom: 10px;
-    font-size: 14px;
+    font-size: $secondary-font-size;
   }
   .team-list__position {
     font-size: 15px;
     line-height: 24px;
     color: #999999;
-    font-family: "Roboto", sans-serif;
+    font-family: text-font;
     font-style: italic;
   }
   .team-list:hover .modal-menu {
@@ -52,6 +52,7 @@
   );
 }
 .section__text {
+  @include text;
     display: block;
     width: 980px;
     text-align: center;

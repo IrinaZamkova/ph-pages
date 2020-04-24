@@ -1,25 +1,24 @@
 
-@import 'helpers/_variables.scss';
-@import 'helpers/_mixin.scss';
-@import 'helpers/_placeholder.scss';
-
+@import './helpers/_variables.scss';
+@import './helpers/_mixin.scss';
 @import 'normalize.scss';
 @import 'base.scss';
 
 
-@import "components/_header.scss";
-@import "components/_section-service.scss";
-@import "components/_section-team.scss";
-@import "components/_footer.scss";
 
 
-@import "components/_container.scss";
-@import "components/_header-bg-img.scss";
-@import "components/_logo.scss";
-@import "components/_navigation.scss";
-@import "components/_button.scss";
-@import "components/_titles.scss";
-@import "components/_modal-menu.scss";
-@import "components/_icons.scss";
+@import "./components/_container.scss";
+@import "./components/_page-bg-img.scss";
+@import "./components/_site-logo.scss";
+@import "./components/_page-nav.scss";
+@import "./components/_button.scss";
+@import "./components/_titles.scss";
+@import "./components/_modal-menu.scss";
+@import "./components/_icons.scss";
 
 
+
+@import "./layout/_header.scss";
+@import "./layout/_main-service.scss";
+@import "./layout/_main-team.scss";
+@import "./layout/_footer.scss";

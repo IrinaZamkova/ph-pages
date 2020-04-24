@@ -1,17 +1,14 @@
 .footer {
-
-    display: flex;
+@include center-flex ($type: "ver");
     border-top: 0.5px solid rgb(181, 181, 181);
-    justify-content: space-between;
-    align-items: center;
-   padding-bottom: 20px;
+   padding-bottom: 40px;
     padding-top: 15px;
   }
   .footer__text {
-    font-size: 14px;
+    font-size: $secondary-font-size;
     color:$title-color;
     line-height: 1.6;
   }
   .footer__text--color-text {
-    color: #f38181;
+    color: $select-color;
   }

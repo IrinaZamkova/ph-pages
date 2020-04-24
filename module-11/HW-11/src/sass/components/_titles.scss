@@ -1,18 +1,18 @@
 
-    header__title {
+.header__title {
       @include title;
        font-size: 150px;
-       color:$main-color;
+       color:$main-light-color;
        font-weight: 900;
        margin-bottom: 100px;
         &--select {
           @include title--select;
          font-size: 72px;
-         color: $main-color;
+         color: $main-light-color;
         }
+ }
 
 
-  
 .section__title {
     @include title;
     color: $title-color;
@@ -21,12 +21,11 @@
     position: relative;
     margin-bottom: 100px;
      &::after {
-      display: block;
-      content: "";
+      @include before-after;
       position: absolute;
       width: 60px;
       height: 3px;
-      background-color: #f38181;
+      background-color:$select-color ;
       top: 120px;
       left: 50%;
       transform: translate(-50%, -50%);
@@ -37,4 +36,3 @@
     color: $title-color;
     font-size: 24px;
   }
-}

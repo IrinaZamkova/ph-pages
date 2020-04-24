@@ -1,0 +1,55 @@
+
+@mixin title {
+  display: block;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1;
+  margin: 0;
+}
+@mixin title--select {
+  display: block;
+  font-weight: bold;
+  line-height: 1.2;
+  font-family: "Kaushan Script", cursive;
+}
+@mixin list{
+  padding-left: 0;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@mixin before-after {
+      display: block;
+      content: "";
+}
+
+@mixin text {
+  font-size: $secondary-font-size;
+  line-height: 1.6;
+  color: #999999;
+  font-family: $text-font;
+}
+@mixin center-flex ($type: "all"){
+  display: flex;
+  justify-content: space-between;
+  @if $type== "all"{
+    justify-content: center;
+    align-items: center;
+  }
+  @else if $type== "hor"{
+    justify-content: center;
+  }
+  @else if $type== "ver"{
+    align-items: center;
+  }
+  @else if $type== "ver-start"{
+    align-items: flex-start;
+  }
+  
+  
+  
+
+}

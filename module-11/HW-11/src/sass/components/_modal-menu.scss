@@ -13,11 +13,9 @@
  
   
 .modal-menu__link {
-    display: flex;
-    background: #fce38a;
-    justify-content: center;
-    align-items: center;
-    fill: rgb(243, 129, 129);
+    @include center-flex ($type: "all");
+    background:$accent-color;
+    fill: $select-color;
     width: 56px;
     height: 56px;
     border: none;
@@ -25,7 +23,7 @@
      &:hover {
        background: #95e1d3;
        opacity: 1;
-       fill: $main-color;
+       fill: $main-light-color;
       }
   }
  
