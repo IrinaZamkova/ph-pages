@@ -1,0 +1,40 @@
+.footer {
+    @include center-flex ($type: "ver");
+        border-top: 0.5px solid rgb(181, 181, 181);
+       padding-bottom: 40px;
+        padding-top: 15px;
+      &footer__text {
+        font-size: $secondary-font-size;
+        color:$title-color;
+        line-height: 1.6;
+        &--color-text {
+            color: $select-color;
+          }
+      }
+    }
+
+      
+.footer__input {
+    display: flex;
+    font-size: $main-font-size;
+    line-height: 1.2;
+       &--email {
+        border: 0.5px solid rgb(181, 181, 181);
+        color:$title-color;
+        width: 230px;
+        background-color: $main-light-color;
+        padding: 15px;
+        color: #cccccc;
+        font-family: $text-font;
+        font-style: italic;
+        font-weight: lighter;
+      }
+      &--submit {
+        border: none;
+        padding: 15px 35px;
+        outline: 0;
+        background: #95e1d3;
+        text-transform: uppercase;
+        color: $main-light-color;
+      }
+}
