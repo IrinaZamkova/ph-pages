@@ -4,6 +4,7 @@
     margin-right: auto;
     background-image: url(../images/photo/background.jpg);
     background-size: cover;
+    background-position: center;
     overflow: hidden;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -14,6 +15,18 @@
       width: 820px;
       text-align: center;
     }
+    &__title {
+      @include title;
+       font-size: 150px;
+       color:$main-light-color;
+       font-weight: 900;
+       margin-bottom: 100px;
+        &--select {
+          @include title--select;
+         font-size: 72px;
+         color: $main-light-color;
+        }
+  }
   }
   .wrapper {
     background-image:linear-gradient(
@@ -34,22 +47,15 @@
        &__list {
         display: block;
       }
-    }
-    .nav__logo {
-        display: block;
-        width: 78px;
-        height: 22px;
+      &__list li {
+        display: inline-block;
+        max-width: 500px;
+        list-style: none;
       }
-       
- .nav__list li {
-      display: inline-block;
-      max-width: 500px;
-      list-style: none;
-    }
- .nav__item:not(:last-child) {
-      margin-right: 40px;
-    }
- .nav__link {
+      &__item:not(:last-child) {
+        margin-right: 40px;
+      }
+    &__link {
       font-family: $main-font;
       color: $main-light-color;
       text-decoration: none;
@@ -63,8 +69,8 @@
          color: $accent-color;
          border-bottom: 2px solid $accent-color;
        }
-    }
-    .nav__svg {
+     }
+     &__svg {
       fill: $main-light-color;
        &:hover,
        &:focus {
@@ -72,18 +78,14 @@
          transition: color 0.2s linear;
        }
     }
-  .header__title {
-    @include title;
-     font-size: 150px;
-     color:$main-light-color;
-     font-weight: 900;
-     margin-bottom: 100px;
-      &--select {
-        @include title--select;
-       font-size: 72px;
-       color: $main-light-color;
-      }
+  }
+ 
+.nav__logo {
+      display: block;
+      width: 78px;
+      height: 22px;
 }
+
 
 .header__btn {
     font-size: $main-font-size*1.125;
