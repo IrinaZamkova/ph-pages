@@ -1,0 +1,50 @@
+@mixin pseudo {
+    display: block;
+    content: "";
+    position: absolute;
+}
+@mixin bg-position {
+  background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+}
+
+  @mixin center-flex ($type: "all"){
+    display: flex;
+    
+    @if $type== "all"{
+        justify-content: center;
+        align-items: center;
+    }
+    @else if $type== "hor"{
+      justify-content: center;
+    }
+    @else if $type== "ver"{
+      align-items: center;
+    }
+    @else if $type== "ver-start"{
+      align-items: flex-start;
+    }
+    @else if $type== "right"{
+        justify-content: right;
+        align-items: center;
+    }
+    @else if $type== "sp-bt"{
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+      }
+}
+@mixin title {
+  display: block;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  line-height: 1.5;
+} 
+
+@mixin marg-center{
+  margin-left: auto;
+  margin-right: auto;
+  
+}

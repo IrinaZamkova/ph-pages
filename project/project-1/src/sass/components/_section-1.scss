@@ -1,0 +1,63 @@
+.header__section {
+  padding-top: 5px;
+}
+.section-1__title{
+  display: none;
+}
+.section-1__list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding-top: 10px;
+  padding-left: 46px;
+  padding-right: 30px;
+  margin-bottom: 50px;
+}
+
+.section-1__item {
+  position: relative;
+  padding-left: 70px;
+  min-height: 60px;
+  text-align: left;
+  font-size: 13px;
+  font-weight: bold;
+  color: black;
+  line-height: 1.5;
+}
+.section-1__item:not(:last-child) {
+  margin-bottom: 24px;
+}
+.section-1__item::before {
+  display: block;
+  content: "";
+  border: 2px solid #ff6b08;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 58px;
+  height: 58px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.section-1__item::after {
+  display: block;
+  content: "";
+  width: 10px;
+  height: 36px;
+  position: absolute;
+  z-index: 3;
+  top: 11px;
+  left: 52px;
+  background-color: white;
+}
+.section-1__icon--Female-Student::before {
+  background-image: url(../images/section-1/icon__Female-Student.svg);
+}
+.section-1__icon--Mobile-Learning::before {
+  background-image: url(../images/section-1/icon__Mobile-Learning.svg);
+}
+.section-1__icon--insurance::before {
+  background-image: url(../images/section-1/icon__insurance.svg);
+}

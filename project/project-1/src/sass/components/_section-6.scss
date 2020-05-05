@@ -1,0 +1,78 @@
+.section-6{
+    padding-top: 40px;
+  }
+  .section-6__title,
+  .content__title{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    text-align: left;
+  }
+  .section-6__title{
+    margin-bottom: 20px;
+  }
+  .content__title{
+    border-bottom: 1px solid grey;
+  }
+  
+  .section-6__bg-img{
+    width: 100%;
+    height: 216px;
+    background-image: url(../images/section-6/Teacher.jpg);
+    background-size: cover;
+    margin-bottom: 25px;
+  }
+  .section-6__list {
+    list-style: none;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    position: relative;
+  }
+  .section-6__list::after {
+    display: block;
+    content: "";
+    height: 2px;
+    width: 26px;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    background-color: #ff6b08;
+  }
+  .section-6__item {
+    display: block;
+    padding-left: 35px;
+    position: relative;
+    font-size: 11px;
+    color: black;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  .section-6__item::before {
+    display: block;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 15px;
+    height: 13px;
+    z-index: 2;
+    background-image: url(../images/section-6/Check.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .section-6__text {
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #999999;
+    margin-bottom: 5px;
+  }
+  .section-6__link {
+    display: block;
+    font-size: 11px;
+    color: #ff6b08;
+    line-height: 1.2;
+    padding-top: 20px;
+    padding-left: 20px;
+  }

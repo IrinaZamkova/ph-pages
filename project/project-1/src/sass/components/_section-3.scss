@@ -1,0 +1,81 @@
+.section-3 {
+    padding-bottom:5px;
+  }
+  .section-3__title {
+    display: block;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .section-3__list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    
+    margin: 0 -5px;
+  }
+  .section-3__card {
+    width: 100%;
+    min-height: 270px;
+    border: none;
+    padding: 30px 20px 20px 20px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 4px 6.928px 23.68px 8.32px rgba(29, 29, 27, 0.11);
+    margin-bottom: 16px;
+    color: black;
+  }
+  .card__title {
+    display: block;
+    position: relative;
+    margin-bottom: 40px;
+    font-size: 13px;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .card__title::after {
+    display: block;
+    content: "";
+    position: absolute;
+    background-color: #ff6b08;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 26px;
+    height: 2px;
+  }
+  .section-3__icon svg {
+    display: block;
+    width: 50px;
+    height: 50px;
+    fill: #ff6b08;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+  }
+  .card__text {
+    font-size: 11px;
+    color: #858585;
+  }
+  .section-3__card:hover,
+  .section-3__card:active {
+    background-color: #ff6b08;
+    color: #ffffff;
+  }
+  .section-3__card:hover svg,
+  .section-3__card:active svg {
+    fill: white;
+  }
+  .section-3__card:hover .card__title::after,
+  .section-3__card:active .card__title::after {
+    background-color: white;
+  }
+  .section-3__card:hover .card__text,
+  .section-3__card:active .card__text {
+    color: white;
+  }

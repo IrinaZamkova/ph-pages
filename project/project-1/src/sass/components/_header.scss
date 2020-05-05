@@ -1,0 +1,112 @@
+.header {
+  padding-bottom: 5px;
+  &__menu {
+    @include center-flex($type: 'sp-bt');
+    flex-direction: row;
+    padding-top: 25px;
+
+    margin-bottom: 50px;
+  }
+  &__content {
+    width: 100%;
+    padding-bottom: 5px;
+    position: relative;
+    &::after {
+      @include pseudo;
+      border: none;
+      right: 30px;
+      bottom: 80px;
+      z-index: 2;
+      background-image: url(../images/header/header-img-2-min.jpg);
+      width: 220px;
+      height: 180px;
+      @include bg-position;
+    }
+  }
+  &__title {
+    @include title;
+    font-size: 20px;
+    color: $main-dark-color;
+    margin-bottom: 36px;
+  }
+  &__text {
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: bold;
+    letter-spacing: 0.08rem;
+    &--light {
+      color: $text-light-color;
+    }
+    &--bold {
+      color: $main-dark-color;
+    }
+    &--bright-text {
+      margin-bottom: 40px;
+      color: $bright-color;
+    }
+  }
+  &__btn {
+    margin-bottom: 300px;
+  }
+}
+
+.nav {
+  @include center-flex(right);
+
+  flex-direction: row;
+
+  &__list {
+    display: none;
+  }
+  &__item {
+    font-size: 12px;
+    color: $text-light-color;
+    font-weight: bold;
+    font-family: $secondary-font;
+    text-transform: uppercase;
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+    &:hover,
+    &:focus {
+      color: $bright-color;
+    }
+  }
+  &__btn {
+    display: none;
+    text-transform: uppercase;
+  }
+  &__burger {
+    display: flex;
+    width: 26px;
+    height: 13px;
+    flex-direction: column;
+    justify-content: space-between;
+    border: none;
+    background-color: $main-wight-color;
+  }
+}
+
+.site-logo__img {
+  width: 80px;
+  height: 38px;
+}
+
+.burger__line {
+  width: 26px;
+  height: 2px;
+  background-color: $main-dark-color;
+}
+
+.btn--free-lesson {
+  display: block;
+  border: none;
+  padding: 20px 10px;
+  font-size: 12px;
+  color: $main-wight-color;
+  text-transform: uppercase;
+  text-align: justify;
+  background-color: $bright-color;
+  letter-spacing: 0.1rem;
+  @include marg-center;
+}
