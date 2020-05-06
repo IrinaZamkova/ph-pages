@@ -7,15 +7,17 @@
 @import 'base.scss';
 
 @import "./components/header";
-@import "./components/section-1";
-@import "./components/section-2";
-@import "./components/section-3";
-@import "./components/section-4";
-@import "./components/section-5";
-@import "./components/section-6";
-@import "./components/section-7";
-@import "./components/section-8__slider";
-@import "./components/section-9__form";
+@import "./components/section-1--promotion";
+@import "./components/section-2--main-problems";
+@import "./components/section-3--how-we-do";
+@import "./components/section-4--program";
+@import "./components/section-5--why-are-we";
+@import "./components/section-6--teacher";
+@import "./components/section-7--warranty";
+@import "./components/section-8--slider";
+@import "./components/section-9--form";
 @import "./components/footer";
-@import "./components/media"
+@import "./media/media-768";
+@import "./media/media-1280";
+@import "./media/media-1680";
 

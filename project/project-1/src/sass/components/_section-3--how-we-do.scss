@@ -1,0 +1,74 @@
+.section-3 {
+  padding-bottom: 5px;
+  &__title {
+    @include title;
+    color: $main-dark-color;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  &__list {
+    @include list-column;
+    margin: 0 -5px;
+  }
+  &__card {
+    width: 100%;
+    min-height: 270px;
+    border: none;
+    padding: 30px 20px 20px 20px;
+    background-color: $main-white-color;
+    text-align: center;
+    box-shadow: 4px 6.928px 23.68px 8.32px rgba(29, 29, 27, 0.11);
+    margin-bottom: 16px;
+    color: $main-dark-color;
+  }
+  &__icon svg {
+    display: block;
+    width: 50px;
+    height: 50px;
+    fill: $bright-color;
+    @include marg-center;
+    margin-bottom: 15px;
+  }
+}
+
+.card {
+  &__title {
+    display: block;
+    position: relative;
+    margin-bottom: 40px;
+    font-size: 13px;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-right: 20px;
+    &::after {
+      @include pseudo;
+      background-color: $bright-color;
+      bottom: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 26px;
+      height: 2px;
+    }
+  }
+  &__text {
+    font-size: 11px;
+    color: $text-light-color;
+  }
+}
+.section-3__card:hover,
+.section-3__card:active {
+  background-color: $bright-color;
+  color: $main-white-color;
+  & .card__title::after,
+  & .card__title::after {
+    background-color: $main-white-color;
+  }
+  & svg,
+  & svg {
+    fill: $main-white-color;
+  }
+  &.card__text,
+  & .card__text {
+    color: $main-white-color;
+  }
+}

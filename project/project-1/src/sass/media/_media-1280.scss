@@ -1,0 +1,257 @@
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1210px;
+  }
+  .card__title,
+  .card__text,
+  .header__text {
+    font-size: 18px;
+  }
+  .header{
+    &__menu {
+    padding-top: 40px;
+    margin-bottom: 120px;
+  }
+   &__title {
+    width: 460px;
+  }
+  &__btn {
+    margin-bottom: 200px;
+  }
+  &__content::after {
+    width: 690px;
+    height: 600px;
+    top: -70px;
+    right: 0;
+  }
+}
+  .btn--free-lesson {
+    font-size: 14px;
+  }
+  .nav{
+    &__list {
+      display: flex;
+      list-style: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-right: 40px;
+   }
+  &__btn {
+    margin-right: 0;
+    padding: 26px 40px;
+   }
+   &__burger {
+    display: none;
+    }
+   }
+
+  
+
+  .section-1{
+    &__list {
+    margin-bottom: 80px;
+  }
+  &__item {
+    width: 320px;
+    padding-left: 80px;
+    padding-top: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+    &::before {
+      width: 104px;
+      height: 104px;
+      z-index: -2;
+      background-size: 60%;
+      background-position: center;
+    }
+    &::after {
+      width: 10px;
+      height: 70px;
+      z-index: -1;
+      top: 17px;
+      left: 100px;
+      background-color: $main-white-color;
+    }
+  }
+  &__title {
+    width: 740px;
+    padding-right: 0;
+    padding-top: 70px;
+    margin-bottom: 40px;
+  }
+}
+
+  .section-2{
+    &__list {
+    padding: 40px 100px;
+    min-height: 320px;
+    margin-bottom: 20px;
+  }
+  &__item {
+    width: 310px;
+    font-size: 18px;
+  }
+}
+  .section-3{
+    &__list {
+    margin-bottom: 100px;
+    }
+    &__card {
+      width: 390px;
+      min-height: 340px;
+    }
+    &__title {
+      text-align: left;
+      padding-top: 80px;
+    }
+  }
+  
+  .program-list {
+    flex-direction: row;
+    padding-left: 0;
+    position: relative;
+    justify-content: space-between;
+    &__list-of-points {
+      @include list-column;
+    }
+    &__item {
+      padding: 35px 0;
+      &:not(:last-child)::before {
+        display: none;
+      }
+       &::after {
+       width: 17px;
+       height: 17px;
+       top: -17px;
+       left: 0;
+    }
+  }
+}
+  .bg__section-4-5::before {
+    height: 100%;
+  }
+  .section-4__title{
+    border-bottom:2px solid $text-light-color;
+    &--flex-left{
+      width: 1210px; 
+    }
+  }
+  .point__title,
+  .point__text {
+    font-size: 19px;
+  }
+
+  .point {
+    max-width: 200px;
+    margin-bottom: 30px;
+  }
+
+  .section-5{
+    &__title {
+    margin-bottom: 40px;
+  }
+  &__list {
+    padding: 50px 100px;
+  }
+  &__item {
+    width: 310px;
+    font-size: 18px; 
+  }
+}
+  .section-7,
+  .section-8 {
+    padding-top: 80px;
+  }
+  .section-7{
+    &__list {
+    padding: 40px 100px;
+  }
+  &__item {
+    font-size: 19px;
+  }
+}
+  .content__title {
+    font-size: 30px;
+  }
+  .section-6 {
+    padding-top: 90px;
+  &__title {
+    margin-bottom: 50px;
+  }
+ &__bg-img {
+    width: 500px;
+    height: 650px;
+  }
+  &__content {
+    width: 640px;
+    height: auto;
+  }
+  &__item::before{
+    width: 25px;
+    height: 23px;
+  }
+}
+
+  .section-5__item,
+  .section-6__item,
+  .section-6__text,
+  .section-6__link,
+  .slider__text,
+  .slider__feedback {
+    font-size: 19px;
+  }
+  .slider {
+    width: 1080px;
+    margin: 0 auto;
+    padding: 40px 100px 40px 260px;
+  &__list {
+    padding-top: 40px;
+    width: 50%;
+    margin-bottom: 100px;
+  }
+  &__title::before {
+    width: 150px;
+    height: 150px;
+     left: -150px;
+  }
+  &__title::after {
+    left: -150px;
+    top: 190px;
+  }
+  &::after {
+    right: -40px;
+  }
+  &::before {
+    content: '\2190';
+    left: -40px;
+  }
+}
+  .section-form__title {
+    font-size: 39px;
+    margin-bottom: 45px;
+    width: 860px;
+  }
+  .form{
+    &__input {
+    width: 620px;
+  }
+  &__text {
+    font-size: 18px;
+    width: 550px;
+    margin-bottom: 50px;
+  }
+  &__btn {
+    margin-bottom: 90px;
+  }
+  &__input--tel {
+    margin-bottom: 40px;
+  }
+}
+  .flex__wrapper {
+    padding: 50px 0;
+  }
+  .footer__link--site-logo {
+    font-size: 15px;
+  }
+}

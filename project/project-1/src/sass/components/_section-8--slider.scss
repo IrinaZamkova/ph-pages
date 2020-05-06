@@ -1,0 +1,131 @@
+.section-8 {
+  padding-top: 45px;
+  &__title {
+    @include title;
+    color: $main-dark-color;
+    @include marg-center;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 0 20px;
+  }
+}
+
+.slider {
+  padding: 150px 25px 35px 25px;
+  position: relative;
+  text-align: center;
+  box-shadow: 4px 6.928px 23.68px 8.32px rgba(29, 29, 27, 0.11);
+  &__title {
+    display: block;
+    font-size: 13px;
+    line-height: 2;
+    color: $bright-color;
+    font-weight: bold;
+    &::before {
+      @include pseudo;
+      left: 50%;
+      top: 20px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      transform: translateX(-50%);
+      background-image: url(../images/section-8/image-6.png);
+      @include bg-position($type: "cov") ;
+    }
+    &::after {
+      @include pseudo;
+      left: 50%;
+      top: 120px;
+      width: 28px;
+      height: 20px;
+      transform: translateX(-50%);
+      background-image: url(../images/section-8/vk.svg);
+      background-size: 70%;
+      background-repeat: no-repeat;
+    }
+  }
+  &__text {
+    display: block;
+    font-size: 11px;
+    color: $text-light-color;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  &__feedback {
+    font-size: 11px;
+    font-weight: 700;
+    color: $main-dark-color;
+    margin-bottom: 20px;
+    line-height: 1.8;
+  }
+  &__link {
+    font-size: 11px;
+    color: $bright-color;
+    line-height: 1.2;
+  }
+  &__list {
+    list-style: none;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    padding-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    margin-bottom: 55px;
+    &::after,
+    &::before {
+      position: absolute;
+      display: block;
+      top: 27.5px;
+      color: #ff6b08;
+      font-weight: bold;
+      font-size: 25px;
+    }
+    &::after {
+      content: '\2192';
+      right: -30px;
+    }
+    &::before {
+      content: '\2190';
+      left: -30px;
+    }
+  }
+  &__item {
+    height: 55px;
+    width: 55px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    &:hover {
+      border: 1px solid #ff6b08;
+    }
+    &--image-1 {
+      background-image: url(../images/section-8/image-1.png);
+    }
+    &--image-2 {
+      background-image: url(../images/section-8/image-2.png);
+    }
+    &--image-3 {
+      background-image: url(../images/section-8/image-3.png);
+    }
+    &--image-4 {
+      background-image: url(../images/section-8/image-4.png);
+    }
+    &--image-5 {
+      background-image: url(../images/section-8/image-5.png);
+    }
+    &--image-6 {
+      background-image: url(../images/section-8/image-6.png);
+    }
+    &--image-7 {
+      background-image: url(../images/section-8/image-7.jpg);
+    }
+  }
+  &__hidden {
+    display: none;
+  }
+}

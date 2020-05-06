@@ -1,0 +1,47 @@
+.section-5 {
+  &__title {
+    @include title;
+    width: 200px;
+    color: $main-white-color;
+    text-align:left;
+    margin-bottom: 15px;
+  }
+  &__list {
+    @include list;
+    flex-direction: column;
+    counter-reset: item;
+    padding: 10px 20px 30px 20px;
+    background-color: $main-white-color;
+    box-shadow: 4px 6.928px 23.68px 8.32px rgba(29, 29, 27, 0.11);
+  }
+  &__item {
+    counter-increment: items;
+    position: relative;
+    min-height: 50px;
+    padding-top: 30px;
+    font-weight: bold;
+    font-size: 13px;
+    color: $main-dark-color;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+    &::before {
+      display: block;
+      content: '0' counter(items);
+      color: $bright-color;
+      position: absolute;
+      top: 5px;
+      left: 35px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    &::after {
+      @include pseudo;
+      background-color: $bright-color;
+      top: 10px;
+      left: 0;
+      width: 26px;
+      height: 3px;
+    }
+  }
+}
