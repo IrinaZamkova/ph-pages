@@ -1,5 +1,6 @@
 .section-8 {
   padding-top: 45px;
+  padding-bottom: 1px;
   &__title {
     @include title;
     color: $main-dark-color;
@@ -11,10 +12,11 @@
 }
 
 .slider {
-  padding: 150px 25px 35px 25px;
+  padding: 150px 25px 10px 25px;
   position: relative;
   text-align: center;
   box-shadow: 4px 6.928px 23.68px 8.32px rgba(29, 29, 27, 0.11);
+  margin-bottom: 20px;
   &__title {
     display: block;
     font-size: 13px;
@@ -30,7 +32,8 @@
       border-radius: 50%;
       transform: translateX(-50%);
       background-image: url(../images/section-8/image-6.png);
-      @include bg-position($type: "cov") ;
+      background-position: top;
+      background-size: 80%;
     }
     &::after {
       @include pseudo;
@@ -53,53 +56,34 @@
   }
   &__feedback {
     font-size: 11px;
-    font-weight: 700;
+    display: inline-block;
+    font-weight: 600;
     color: $main-dark-color;
     margin-bottom: 20px;
     line-height: 1.8;
   }
   &__link {
+    display: inline;
     font-size: 11px;
     color: $bright-color;
     line-height: 1.2;
   }
   &__list {
-    list-style: none;
-    position: relative;
-    display: flex;
+    @include list;
     flex-direction: row;
-    justify-content: space-between;
     width: 70%;
-    padding-top: 15px;
-    margin-left: auto;
-    margin-right: auto;
+    @include marg-center;
     height: auto;
     margin-bottom: 55px;
-    &::after,
-    &::before {
-      position: absolute;
-      display: block;
-      top: 27.5px;
-      color: #ff6b08;
-      font-weight: bold;
-      font-size: 25px;
-    }
-    &::after {
-      content: '\2192';
-      right: -30px;
-    }
-    &::before {
-      content: '\2190';
-      left: -30px;
-    }
   }
   &__item {
     height: 55px;
     width: 55px;
-    border: 1px solid transparent;
+    border: none;
     border-radius: 50%;
-    background-size: cover;
+    background-size: 100%;
     background-position: center;
+    background-repeat: no-repeat;
     &:hover {
       border: 1px solid #ff6b08;
     }
@@ -127,5 +111,21 @@
   }
   &__hidden {
     display: none;
+  }
+  &__btn {
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 11px;
+    border: none;
+    background: transparent;
+    &--right {
+      bottom: -47.5px;
+      right: 0px;
+    }
+    &--left {
+      bottom: -47.5px;
+      left: 0;
+    }
   }
 }

@@ -7,8 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="fonts" href="fonts/fonts.css" />
-  
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,600,700,700i,800,800i,900,900i&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="fonts/fonts.css" />
+
     <title>Project</title>
   </head>
 
@@ -19,16 +23,23 @@
           <a href="#" class="site-logo">
             <img
               class="site-logo__img"
+              srcset="
+                ./images/header/logo.png 80w,
+                ./images/header/logo@2x.png 158w
+              "
               src="./images/header/logo.png"
               alt="Hell&Enn"
+              sizes="80px"
             />
           </a>
           <nav class="nav">
             <ul class="nav__list">
-              <li class="nav__item">Программа обучения</li>
-              <li class="nav__item">О нас</li>
-              <li class="nav__item">Варианты обучения</li>
-              <li class="nav__item">Котакты</li>
+              <li class="nav__item">
+                <a href="#"> Программа обучения</a>
+              </li>
+              <li class="nav__item"><a href=""> О нас</a></li>
+              <li class="nav__item"><a href="">Варианты обучения</a></li>
+              <li class="nav__item"><a href="">Контакты</a></li>
             </ul>
             <button class="nav__btn">Консультация по телефону</button>
             <button class="nav__burger">
@@ -38,10 +49,9 @@
             </button>
           </nav>
         </div>
-
         <div class="header__content">
           <h1 class="header__title">
-            Комплексная <br> подготовка к ВНО <br>  по английскому языку
+            Комплексная подготовка к ВНО по английскому языку
           </h1>
           <p class="header__text header__text--light">Просто не будет.</p>
           <p class="header__text header__text--bold">
@@ -51,13 +61,46 @@
           <button class="header__btn btn--free-lesson">
             хочу на бесплатное занятие
           </button>
+          ​<picture class="header__img">
+            <source
+              srcset="
+                ./images/header/header-215px.png,
+                images/header/header-215px@2x.png
+              "
+              media="(max-width: 767px) "
+            />
+            <source
+              srcset="
+                ./images/header/header-370px.png,
+                ./images/header/header-370px@2x.png
+              "
+              media="(max-width:1280px) "
+            />
+            <source
+              srcset="
+                ./images/header/header-685.png,
+                ./images/header/header-685@2x.png,
+
+              "
+              media="(max-width: 1679px) "
+            />
+            <source
+              srcset="
+                ./images/header/header-839.png,
+                ./images/header/header-839@2x.png
+              "
+              media="(min-width: 1680px)"
+            />
+            <img srcset="./images/header/header-215px.png" alt="our School" />
+          </picture>
         </div>
       </div>
-
-        <section class="header__section-1">
-          <div class="container">
-             <h2 class="section-1__title">section-1</h2>
-              <ul class="section-1__list">
+    </header>
+    <main>
+      <section class="section-1">
+        <div class="container">
+          <h2 class="section-1__title">section-1</h2>
+          <ul class="section-1__list">
             <li class="section-1__item section-1__icon--Female-Student">
               Адаптированная авторская программа ВНО
             </li>
@@ -65,14 +108,12 @@
               Современные методики обучения
             </li>
             <li class="section-1__item section-1__icon--insurance">
-              Финансовая гарантия результат
+              Финансовая гарантия результата
             </li>
-              </ul>
-          </div>  
-        </section>
-      
-    </header>
-    <main>
+          </ul>
+        </div>
+      </section>
+
       <section class="section-2">
         <div class="wrapper">
           <div class="container">
@@ -117,7 +158,9 @@
             <li class="section-3__card">
               <a href="#" class="section-3__icon">
                 <svg>
-                  <use href="./images/section-3/sprite.svg#Mobile-Learning"></use>
+                  <use
+                    href="./images/section-3/sprite.svg#Mobile-Learning"
+                  ></use>
                 </svg>
               </a>
               <h4 class="card__title">
@@ -161,7 +204,9 @@
             <li class="section-3__card">
               <a href="#" class="section-3__icon">
                 <svg>
-                  <use href="./images/section-3/sprite.svg#Female-Student"></use>
+                  <use
+                    href="./images/section-3/sprite.svg#Female-Student"
+                  ></use>
                 </svg>
               </a>
               <h4 class="card__title">
@@ -193,7 +238,10 @@
       </section>
       <div class="bg__section-4-5">
         <section class="section-4">
-          <h2 class="section-4__title"> <span class="section-4__title--flex-left" > Наша программа</span></h2>
+          <div class="container">
+            <h2 class="section-4__title">Наша программа</h2>
+          </div>
+          <div class="section-4__line"></div>
           <div class="container">
             <ul class="program-list">
               <li class="program-list__item">
@@ -292,7 +340,7 @@
 
         <section class="section-5">
           <div class="container">
-            <h2 class="section-5__title"> Почему нас выбирают </h2>
+            <h2 class="section-5__title">Почему нас выбирают</h2>
             <ul class="section-5__list">
               <li class="section-5__item">Обучение в малых командах</li>
               <li class="section-5__item">Визуализированные конспекты</li>
@@ -313,7 +361,34 @@
         <div class="container">
           <h2 class="section-6__title">Преподаватель</h2>
           <div class="section-6__wrapper">
-            <div class="section-6__bg-img"></div>
+            <picture class="section-6__img">
+              <source
+                srcset="
+                  ./images/section-6/teacher-279px.jpg,
+                  ./images/section-6/teacher-279px@2x.jpg
+                "
+                media="(max-width: 767px) "
+              />
+              <source
+                srcset="
+                  ./images/section-6/teacher-768.jpg,
+                  ./images/section-6/teacher-768@2x.jpg
+                "
+                media="(min-width: 768px) "
+              />
+              <source
+                srcset="
+                  ./images/section-6/teacher-1280.jpg,
+                  ./images/section-6/teacher-1280@2x.jpg
+                "
+                media="(min-width: 1280px) "
+              />
+              
+              <img
+                srcset="./images/section-6/teacher-279px.jpg"
+                alt="teacher"
+              />
+            </picture>
             <div class="section-6__content">
               <h2 class="content__title">Елена Морева</h2>
               <ul class="section-6__list">
@@ -365,7 +440,8 @@
               <li class="section-7__item">
                 Ты научишься писать сочинения минимум на 10 баллов из 14.<span
                   class="bright-text"
-                  >В то время как 20% учеников за сочинение получили 0.
+                >
+                  В то время как 20% учеников за сочинение получили 0.
                 </span>
               </li>
               <li class="section-7__item">
@@ -394,13 +470,21 @@
               За короткий час занять з Оленою я опанувала граматику і поповнила
               свій зовсім пустий словниковий запас. З першого ж заняття я
               зрозуміла, що знаходжуся у своїй тарілці.<span
-                class="slider__hidden">
+                class="slider__hidden"
+              >
                 Ми з Оленою стали друзями, тому що її справді хвилювала моя
-                успішність.Вона стала для мене авторитетом,проте я не тремтіла
-                на уроках, маючистрах зробити нейменшу помилку. Зараз я можу
+                успішність. Вона стала для мене авторитетом, проте я не тремтіла
+                на уроках, маючи страх зробити нейменшу помилку. Зараз я можу
                 похизуватись тим,що я студент...</span
-              > <span><a class="slider__link" href="">Читать дальше</a></span>
+              >
+              <span><a class="slider__link" href="">Читать дальше</a></span>
             </p>
+            <button class="slider__btn slider__btn--right">
+              <img src="./images/section-8/arrow-right-1280.png" alt="arrow" />
+            </button>
+            <button class="slider__btn slider__btn--left">
+              <img src="./images/section-8/arrow-left-1280.png" alt="arrow" />
+            </button>
           </div>
           <ul class="slider__list">
             <li class="slider__item slider__item--image-1"></li>
@@ -414,7 +498,7 @@
         </div>
       </section>
       <section class="section-form">
-        <div class="section-8__wrapper">
+        <div class="section-form__wrapper">
           <div class="container">
             <h2 class="section-form__title">
               Регистрация на
@@ -448,7 +532,7 @@
           <a class="footer__link footer__link--tel" href="+38(000)0000000">
             +38 (000) 000 00 00
           </a>
-
+          <div class="footer__line"></div>
           <a href="#" class="footer__link footer__link--insta">
             <img src="./images/footer/instagram.png" alt="instagram" />
           </a>

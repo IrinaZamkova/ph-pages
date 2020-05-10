@@ -1,77 +1,68 @@
 @mixin pseudo {
-    display: block;
-    content: "";
-    position: absolute;
+  display: block;
+  content: '';
+  position: absolute;
 }
-@mixin bg-position($type: "cont") {
+@mixin bg-position($type: 'cont') {
   background-position: center;
   background-repeat: no-repeat;
-  @if $type== "cov"{
+  @if $type== 'cov' {
     background-size: cover;
-   }
-    @else if $type== "cont"{
-      background-size: contain;
+  } @else if $type== 'cont' {
+    background-size: contain;
+  }
 }
-}
 
+@mixin center-flex($type: 'all') {
+  display: flex;
 
-
-  @mixin center-flex ($type: "all"){
-    display: flex;
-    
-    @if $type== "all"{
-        justify-content: center;
-        align-items: center;
-    }
-    @else if $type== "hor"{
-      justify-content: center;
-    }
-    @else if $type== "ver"{
-      align-items: center;
-    }
-    @else if $type== "ver-start"{
-      align-items: flex-start;
-    }
-    @else if $type== "right"{
-        justify-content: right;
-        align-items: center;
-    }
-    @else if $type== "sp-bt"{
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: nowrap;
-      }
+  @if $type== 'all' {
+    justify-content: center;
+    align-items: center;
+  } @else if $type== 'hor' {
+    justify-content: center;
+  } @else if $type== 'ver' {
+    align-items: center;
+  } @else if $type== 'ver-start' {
+    align-items: flex-start;
+  } @else if $type== 'right' {
+    justify-content: right;
+    align-items: center;
+  } @else if $type== 'sp-bt' {
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
 }
 @mixin title {
   display: block;
   font-weight: bold;
   font-size: 20px;
-  font-family: "Montserrat", sans-serif;
-  line-height: 1.5;
-  @media screen and (min-width: 768px){
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.3;
+  @media screen and (min-width: 768px) {
     font-size: 26px;
   }
   @media screen and (min-width: 1280px) {
-font-size: 42px;
-}
-@media screen and (min-width: 1680px) {
-  font-size: 46px;
-}
+    font-size: 42px;
+  }
+  @media screen and (min-width: 1680px) {
+    font-size: 46px;
+  }
 }
 
-@mixin marg-center{
+@mixin marg-center {
   margin-left: auto;
   margin-right: auto;
-  
 }
 
-@mixin list{
+@mixin list {
   display: flex;
   list-style: none;
   justify-content: space-between;
 }
 
-@mixin list-column{
+@mixin list-column {
   display: flex;
   flex-direction: column;
   list-style: none;

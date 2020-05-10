@@ -10,9 +10,11 @@
   }
   &__list {
     @include list;
+    width: 100%;
+    min-height: 470px;
     flex-direction: column;
     counter-reset: item;
-    padding: 10px 20px 30px 20px;
+    padding: 10px 23px 0 30px;
     background-color: $main-white-color;
     box-shadow: 4px 6.928px 23.68px 8.32px rgba(29, 29, 27, 0.11);
     margin-bottom: 20px;
@@ -23,11 +25,11 @@
     min-height: 50px;
     padding-top: 30px;
     font-size: 13px;
+    line-height: 1.5;
     font-weight: bold;
     color: $main-dark-color;
-    &:not(:last-child) {
-      margin-bottom: 20px;
-    }
+    margin-bottom: 20px;
+
     &::before {
       display: block;
       content: '0' counter(items);

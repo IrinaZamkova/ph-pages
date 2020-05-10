@@ -48,8 +48,14 @@
       text-align: center;
     }
   }
+  &__line {
+    display: none;
+    height: 30px;
+    width: 1px;
+    background-color: slategrey;
+    margin-right: 30px;
+  }
 }
-
 
 .flex__wrapper {
   display: flex;
