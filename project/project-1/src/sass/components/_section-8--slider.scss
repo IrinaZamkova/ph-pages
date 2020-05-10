@@ -119,6 +119,10 @@
     height: 11px;
     border: none;
     background: transparent;
+    &:hover,
+    &:focus{
+      cursor: pointer;
+    }
     &--right {
       bottom: -47.5px;
       right: 0px;

@@ -7,7 +7,7 @@
     font-size: 18px;
   }
   .header {
-    background-image: url(../../images/header/wave-1280.jpg);
+    background-image: url(../images/header/wave-1280.jpg);
     background-position-y: 20px;
     &__menu {
       padding-top: 40px;
@@ -103,7 +103,7 @@
     }
   }
   .wrapper::after {
-    background-image: url(../../images/section-2/fire.png);
+    background-image: url(../images/section-2/fire.png);
     height: 80%;
   }
   .section-3 {
@@ -182,7 +182,7 @@
         width: 546px;
         height: 350px;
         z-index: -1;
-        background-image: url(../../images/section-4/class-546.jpg);
+        background-image: url(../images/section-4/class-546.jpg);
         background-size: cover;
         left: -75px;
         top: -235px;

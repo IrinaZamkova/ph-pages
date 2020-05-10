@@ -63,6 +63,7 @@
 .section-3__card:active {
   background-color: $bright-color;
   color: $main-white-color;
+  cursor: pointer;
   & .card__title::after,
   & .card__title::after {
     background-color: $main-white-color;

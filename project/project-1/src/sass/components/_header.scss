@@ -1,5 +1,5 @@
 .header {
-  background-image: url(../../images/header/bg-wave.jpg);
+  background-image: url(../images/header/bg-wave.jpg);
   background-repeat: no-repeat;
   background-position-y: 30px;
   background-position-x: center;
@@ -65,9 +65,10 @@
     &:not(:last-child) {
       margin-right: 40px;
     }
-    &:hover,
-    &:focus {
+    & a:hover,
+    & a:focus {
       color: $bright-color;
+      cursor: pointer;
     }
   }
   &__btn {
