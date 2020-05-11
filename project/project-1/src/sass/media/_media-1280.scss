@@ -270,7 +270,16 @@
       width: 50%;
       margin-bottom: 100px;
     }
-
+    &__btn {
+      &--right {
+       
+        right: -45px;
+      }
+      &--left {
+        
+        left: -45px;
+      }
+    }
     &__title {
       font-size: 25px;
       &::after {
