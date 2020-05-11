@@ -5,7 +5,7 @@
   }
   .header {
     background-image: url(../images/header/wave-1680.jpg);
-    background-position-y: 10px;
+    background-position-y: -50px;
     &__menu {
       padding-top: 40px;
       margin-bottom: 150px;
@@ -129,9 +129,7 @@
       font-size: 22px;
     }
   }
-  .bg__section-4-5::before {
-    height: 80%;
-  }
+
   .section-5 {
     &__title {
       margin-bottom: 50px;
